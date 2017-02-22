@@ -5,7 +5,7 @@ MAINTAINER Krennic
 LABEL grav.version=1.1.17 \
       php.version=7.0
 
-RUN LC_ALL=C.UTF-8 add-apt-repository ppa:ondrej/php && \
+RUN add-apt-repository ppa:ondrej/php && \
 	apt-get update && apt-get install -y --no-install-recommends\
     php7.0-zip \
     php7.0-gd \
