@@ -6,7 +6,7 @@ LABEL grav.version=1.1.17 \
       php.version=7.0
 
 RUN apt-get update && \
-	apt-get install python-software-properties software-properties-common && \
+	apt-get install -y python-software-properties software-properties-common && \
 	add-apt-repository ppa:ondrej/php && \
 	apt-get update && apt-get install -y --no-install-recommends\
     php7.0-zip \
